@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <!-- Style for the Tags -->
+    <style>
+    body {
+      background-color: lightblue;
+      text-align: center;
+    }
+    button {
+      font-size: 10px;
+      font-weight: bold;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video><br>
+    <!-- Simple Heading -->
+    <h3> Train Your Image Here..!!!</h3>
+    <!-- Button's -->
+    <button id="class-a">No Class</button>
+    <button id="class-b">Add A</button>
+    <button id="class-c">Add B</button>
+    <button id="class-d">Add C</button>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
